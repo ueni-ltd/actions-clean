@@ -7,7 +7,7 @@ jobs:
   main:
     services:
       nginx:
-        image: nginx:alpine
+        image: docker://harbor.ueni.xyz/proxy/library/nginx:alpine
         ports:
           - 8080:80
     strategy:
